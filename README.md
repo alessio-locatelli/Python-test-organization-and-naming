@@ -49,6 +49,7 @@
 - Files in the `tests/` (or `tests/unit/`) folder must mirror the application files.
 
   - `src/module_a/foo.py`
+
   ```py
   def func(): ...
 
@@ -57,6 +58,7 @@
   ```
 
   - `tests/test_module_a/test_foo.py`
+
   ```py
   def test_func(): ...
 
