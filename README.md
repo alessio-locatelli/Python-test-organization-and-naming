@@ -50,21 +50,21 @@
 
   - `src/module_a/foo.py`
 
-  ```py
-  def func(): ...
+    ```py
+    def func(): ...
 
-  def ExampleClass:
-    def example_method(): ...
-  ```
+    def ExampleClass:
+      def example_method(): ...
+    ```
 
   - `tests/test_module_a/test_foo.py`
 
-  ```py
-  def test_func(): ...
+    ```py
+    def test_func(): ...
 
-  def TestExampleClass:
-    def test_example_method(): ...
-  ```
+    def TestExampleClass:
+      def test_example_method(): ...
+    ```
 
   If it exists, the `tests/integration/` folder should try to be consistent, buy may have a different structure.
 
