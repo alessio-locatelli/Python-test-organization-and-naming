@@ -75,8 +75,8 @@
 #### Naming Schema
 
 ```
-    test_  +  function_name  +  _extra_information
-[MANDATORY]    [MANDATORY]         [OPTIONAL]
+    test_    +  function_name  +  _extra_information
+[MANDATORY]      [MANDATORY]         [OPTIONAL]
 ```
 
 Where:
