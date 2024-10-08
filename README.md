@@ -7,7 +7,7 @@
   src/
   tests/
   ```
-- The repository may have a dedicated `testing/' folder to store files that are not part of an application, but are needed for testing (sample data, helper functions, utilities for setup/teardown of the test environment).
+- The repository may have a dedicated `testing/` folder to store files that are not part of an application, but are needed for testing (sample data, helper functions, utilities for setup/teardown of the test environment).
   ```
   src/
   testing/
