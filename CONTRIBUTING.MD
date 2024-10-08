@@ -4,7 +4,7 @@ All types of contributions are encouraged and valued.
 
 ## Setup
 
-1. `pre-commit install`
+`pre-commit install`
 
 ## Lint
 
