@@ -83,7 +83,8 @@ Where:
 
 - `test_` is a prefix that is required to [discover a test](https://docs.pytest.org/en/stable/explanation/goodpractices.html#conventions-for-python-test-discovery).
 - `function_name` is a function, a class method, or a class name.
-- `_extra_information` (usually in integration and other non-unit tests) is an optional suffix that describes a test scenario. This suffix can make a test name more verbose and provide some information about the test. In unit tests, the prefix should be avoided unless absolutely necessary. This helps to keep names short and simple.
+- `_extra_information` (usually in integration and other non-unit tests) is an optional suffix that describes a test scenario.
+  This suffix can make a test name more verbose and provide some information about the test. In unit tests, the prefix should be avoided unless absolutely necessary. This helps to keep names short and simple.
 
 #### Naming Examples
 
@@ -144,6 +145,7 @@ Where:
 Setup and teardown logic must be outside of a test.
 
 - Bad:
+
   ```py
   # This is a bad example. Do not copy!
   def test_compute_something():
@@ -151,6 +153,7 @@ Setup and teardown logic must be outside of a test.
     assert compute_something()
     database.remove("foo")  # Teardown.
   ```
+
 - Better (option 1):
 
   ```py
@@ -179,7 +182,6 @@ Setup and teardown logic must be outside of a test.
   def cleanup_testing_database():
       yield
       database.remove("foo")
-
 
   @pytest.mark.usefixtures("fill_database_with_fake_foobars", "cleanup_testing_database")
   def test_compute_something():
